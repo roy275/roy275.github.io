@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>BPA 1B | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/logo.png"">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">BPA</span> 1B VIDEO</h1>
+        </div>
+       
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1> BPA 1B MEMORIES♥️</h1>
+        <p>Hope you're doing well😊
+        
+        
+        
+        
+        
+        
+       
+        </p>
+      </div>
+    </section>
+    </style>
+    <style>
+  body {
+    background-image: url("cool-background.jpg"); /* You can change this to any image you want */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  button {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0953C1; /* You can change this to any color you want */
+    color: white;
+    font-size: 20px;
+  }
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  .video-container {
+    display: none;
+  }
+  #videoPlayer {
+    max-width: 100%;
+    max-height: 80vh; /* Adjust based on emulator screen size */
+  }
+  .button-container {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="video-container">
+  <video id="videoPlayer" controls>
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="button-container">
+  <button onclick="playVideo('video1.mp4')">Video 1</button>
+  <button onclick="playVideo('video2.mp4')">Video 2</button>
+  <button onclick="playVideo('video3.mp4')">Video 3</button>
+  <button onclick="playVideo('video4.mp4')">Video 4</button>
+  <button onclick="playVideo('video5.mp4')">Video 5</button>
+   <button onclick="playVideo('video6.mp4')">Video 6</button>
+   <button onclick="playVideo('video7.mp4')">Video 7</button>
+</div>
+
+<script>
+  const videoPlayer = document.getElementById('videoPlayer');
+  const videoContainer = document.querySelector('.video-container');
+
+  function playVideo(videoSrc) {
+    videoPlayer.src = videoSrc;
+    videoContainer.style.display = 'block';
+    videoPlayer.play();
+  }
+
+  videoPlayer.onended = function() {
+    videoContainer.style.display = 'none';
+  };
+</script>
+  </body>
+</html>
